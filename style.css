@@ -13,16 +13,59 @@
 }
 
 body {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
   background-image: url('/images/bg-desktop.svg');
   background-color: var(--prima-color-1);
   background-repeat: no-repeat;
   background-size: 100%;
+  padding: 5em;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5rem;
+}
+
+header h1 {
+  color: #ffff;
+  font-family: var(--ff-heading);
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.first-section__heading {
+  color: #ffff;
+  font-family: var(--ff-heading);
+}
+
+.first-section__message {
+  color: #ffff;
+  font-family: var(--ff-body);
+}
+
+.first-section button {
+  padding: 1rem 4rem;
+  border-radius: 100px;
+  border: none;
+  color: hsl(257, 40%, 65%);
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-heading-600);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+span {
+  width: 1%;
+  border: 1px solid #ffff;
+  padding: 0.5rem;
+  border-radius: 100px;
 }
