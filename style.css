@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --prima-color-1: hsl(257, 40%, 49%);
+  --prima-color-2: hsl(300, 69%, 71%);
+
+  --ff-heading: 'Poppins', sans-serif;
+  --ff-body: 'Open Sans', sans-serif;
+
+  --fw-heading-400: 400;
+  --fw-heading-600: 600;
+  --fw-body-400: 400;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image: url('/images/bg-desktop.svg');
+  background-color: var(--prima-color-1);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
