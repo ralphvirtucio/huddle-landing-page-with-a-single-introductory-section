@@ -16,7 +16,7 @@ body {
   background-image: url('/images/bg-desktop.svg');
   background-color: var(--prima-color-1);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100rem;
   padding: 5em;
 }
 
@@ -31,41 +31,77 @@ header h1 {
   font-family: var(--ff-heading);
 }
 
+.illustration img {
+  width: 55rem;
+}
+
 main {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.first-section {
+  max-width: 40rem;
 }
 
 .first-section__heading {
   color: #ffff;
   font-family: var(--ff-heading);
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .first-section__message {
   color: #ffff;
   font-family: var(--ff-body);
+  font-size: 1rem;
+  line-height: 2;
 }
 
 .first-section button {
   padding: 1rem 4rem;
   border-radius: 100px;
   border: none;
-  color: hsl(257, 40%, 65%);
+  color: #674bb1;
   font-family: var(--ff-heading);
   font-weight: var(--fw-heading-600);
+  cursor: pointer;
+  box-shadow: 0px 0px 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.first-section button:hover {
+  background-color: var(--prima-color-2);
+  color: #ffff;
+  box-shadow: 0px 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 footer {
   display: flex;
-  align-items: center;
-  gap: 1rem;
   justify-content: flex-end;
+  gap: 0.5rem;
 }
 
-span {
+.facebook {
   width: 1%;
-  border: 1px solid #ffff;
-  padding: 0.5rem;
+  border: 1px solid #fff;
   border-radius: 100px;
+  padding: 0.5rem;
+  color: #fff;
+  fill: #fff;
+}
+.twitter {
+  width: 1%;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.5rem;
+  fill: #fff;
+}
+.instagram {
+  width: 1%;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0.5rem;
+  fill: #fff;
 }
