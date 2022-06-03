@@ -13,95 +13,67 @@
 }
 
 body {
-  background-image: url('/images/bg-desktop.svg');
   background-color: var(--prima-color-1);
+  background-image: url('images/bg-desktop.svg');
   background-repeat: no-repeat;
-  background-size: 100rem;
+  background-size: cover;
   padding: 5em;
 }
 
-header {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 5rem;
-}
-
-header h1 {
-  color: #ffff;
-  font-family: var(--ff-heading);
-}
-
-.illustration img {
-  width: 55rem;
-}
-
-main {
+.container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 1rem;
+  margin-top: 5rem;
 }
 
-.first-section {
-  max-width: 40rem;
+.illustration {
+  width: 50rem;
 }
 
 .first-section__heading {
-  color: #ffff;
   font-family: var(--ff-heading);
+  color: #fff;
   font-size: 3rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  max-width: 70%;
 }
 
 .first-section__message {
-  color: #ffff;
   font-family: var(--ff-body);
-  font-size: 1rem;
+  color: #fff;
   line-height: 2;
+  /* max-width: 55%; */
 }
-
-.first-section button {
-  padding: 1rem 4rem;
+.register-btn {
+  padding: 0.8rem 4rem;
   border-radius: 100px;
   border: none;
-  color: #674bb1;
+  color: #9e97b1;
   font-family: var(--ff-heading);
   font-weight: var(--fw-heading-600);
+  box-shadow: 0 1rem 1rem 0rem rgb(0 0 0 / 20%);
   cursor: pointer;
-  box-shadow: 0px 0px 1rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-.first-section button:hover {
-  background-color: var(--prima-color-2);
-  color: #ffff;
-  box-shadow: 0px 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 footer {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 0.5rem;
 }
 
-.facebook {
-  width: 1%;
-  border: 1px solid #fff;
-  border-radius: 100px;
-  padding: 0.5rem;
-  color: #fff;
+svg {
+  width: 1rem;
+  height: 1rem;
   fill: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  border-radius: 100px;
 }
-.twitter {
-  width: 1%;
-  border: 1px solid #fff;
-  border-radius: 100px;
-  padding: 0.5rem;
-  fill: #fff;
-}
-.instagram {
-  width: 1%;
-  border: 1px solid #fff;
-  border-radius: 100px;
-  padding: 0.5rem;
-  fill: #fff;
+
+svg:hover {
+  fill: #fd51bf;
+  border-color: #fd51bf;
 }
